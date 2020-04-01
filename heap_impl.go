@@ -114,7 +114,7 @@ func (tp *HeapTaskPool) addOrUpdateTask(t time.Time, key string, exec TaskFunc, 
 		key:    key,
 	}
 	tp.keys[key] = taskItem
-	tp.tasks.Push(taskItem)
+	heap.Push(tp.tasks, taskItem)
 }
 
 func (tp *HeapTaskPool) cancelTask(key string) {
