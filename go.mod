@@ -1,4 +1,4 @@
-module gitlab.ymipro.com/fundamental/minsys/todos_center
+module github.com/patdz/schedule_task
 
 go 1.14
 
